@@ -1,0 +1,21 @@
+{
+  "Plugins": [
+    {
+      "Name": "Papers Please",
+      "InternalName": "PapersPlease",
+      "Author": "Averthian",
+      "Punchline": "Open Tomestone.gg profiles from the game",
+      "Description": "Adds a right-click context menu option and /tome command to open character profiles on Tomestone.gg.",
+      "ApplicableVersion": "any",
+
+      "RepoUrl": "https://github.com/Averthian/Papers-Please-Dalamud",
+      "Tags": [ "utility", "tomestone", "profile" ],
+
+      "DalamudApiLevel": 14,
+      "AssemblyVersion": "1.0.0.0",
+
+      "DownloadLinkInstall": "https://github.com/Averthian/Papers-Please-Dalamud/releases/download/v1.0.0/PapersPlease.zip",
+      "DownloadLinkUpdate": "https://github.com/Averthian/Papers-Please-Dalamud/releases/download/v1.0.0/PapersPlease.zip"
+    }
+  ]
+}
