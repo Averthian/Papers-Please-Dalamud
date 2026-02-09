@@ -1,0 +1,12 @@
+{
+  "Author": "Averthian",
+  "Name": "Papers Please",
+  "Punchline": "Stop party finder terrorists.",
+  "Description": "A Dalamud mod that lets you search a player on tomestone.gg. Right click a player to searcg them, or /tome for yourself.",
+  "InternalName": "TomestoneSearch",
+  "AssemblyVersion": "1.0.0.0",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "plugin"
+  ]
+}

@@ -11,7 +11,7 @@ namespace PapersPlease // 🔴 MUST MATCH PROJECT NAME
 {
     public sealed class Plugin : IDalamudPlugin
     {
-        public string Name => "TomeLink";
+        public string Name => "PapersPlease";
 
         private const string CommandName = "/tome";
 
@@ -29,14 +29,33 @@ namespace PapersPlease // 🔴 MUST MATCH PROJECT NAME
                 HelpMessage = "Open your character on tomestone.gg",
             });
 
+
             ContextMenu.OnMenuOpened += OnMenuOpened;
+            PluginInterface.UiBuilder.Draw += Draw;
+            PluginInterface.UiBuilder.OpenConfigUi += OpenConfigUi;
+
         }
+
+        private void Draw()
+        {
+            // No main UI
+        }
+
+        private void OpenConfigUi()
+        {
+            // No config UI
+        }
+
 
         public void Dispose()
         {
+            PluginInterface.UiBuilder.Draw -= Draw;
+            PluginInterface.UiBuilder.OpenConfigUi -= OpenConfigUi;
+
             ContextMenu.OnMenuOpened -= OnMenuOpened;
             CommandManager.RemoveHandler(CommandName);
         }
+
 
         // =====================
         // /tome → YOUR profile
